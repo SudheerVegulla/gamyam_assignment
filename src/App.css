@@ -1,4 +1,4 @@
-.App {
+/* .App {
   text-align: center;
 }
 
@@ -35,4 +35,42 @@
   to {
     transform: rotate(360deg);
   }
+} */
+
+.carousel-container {
+  position: relative;
+  /* height: 240px;
+  object-fit: cover;
+  overflow: hidden; */
+}
+
+.carousel-wrapper {
+  position: relative;
+  height: 240px;
+  object-fit: cover;
+  overflow: hidden;
+}
+
+.carousel-arrow {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: rgba(255, 255, 255, 0.5);
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+  z-index: 2;
+}
+
+.carousel-arrow.prev {
+  left: 10px;
+}
+
+.carousel-wrapper .slick-slide img {
+  width: 100%;
+  height: auto; 
+}
+
+.carousel-arrow.next {
+  right: 10px;
 }
